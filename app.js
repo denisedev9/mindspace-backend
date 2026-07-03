@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,10 +9,9 @@ const errorHandler = require('./middlewares/error-handler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const router = require('./routes/index');
 
-const { MONGO_URI = 'mongodb://localhost:27017/mindspacedb' } = process.env;
+const { MONGO_URI = 'mongodb://localhost:27017/mindspacedb', PORT = 3000 } = process.env;
 
 const app = express();
-const PORT = 3000;
 
 mongoose.connect(MONGO_URI);
 

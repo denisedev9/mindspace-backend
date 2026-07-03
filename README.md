@@ -1,3 +1,9 @@
+// sitioweb: https://denisedev9.github.io/mindspace-frontend/#/
+
+// Frontend: https://github.com/denisedev9/mindspace-frontend/pull/1
+
+---- Backend ----
+
 # MindSpace Backend
 
 API backend diseñada para gestionar la lógica de autenticación y datos de la plataforma MindSpace.
